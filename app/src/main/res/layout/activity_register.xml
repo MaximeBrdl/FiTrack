@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register">
+
+    <ImageView
+        android:id="@+id/background_login"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginStart="10dp"
+        android:contentDescription="background_description"
+        android:scaleType="centerCrop"
+        android:scaleX="1.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background"
+        tools:ignore="ImageContrastCheck" />
+
+    <TextView
+        android:id="@+id/SignInText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="@font/merriweather_light"
+        android:text="sign_up"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:textStyle="bold"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+
+        tools:ignore="TextContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_username_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:contentDescription="username_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SignInText"
+        app:srcCompat="@drawable/username"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_email_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="email_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_username_register"
+        app:srcCompat="@drawable/email"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_password_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="password_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_email_register"
+        app:srcCompat="@drawable/password"
+        tools:ignore="ImageContrastCheck" />
+
+    <ImageView
+        android:id="@+id/background_password_confirm_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:contentDescription="password_description"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/background_password_register"
+        app:srcCompat="@drawable/password"
+        tools:ignore="ImageContrastCheck" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/button_sign_up"
+        android:fontFamily="@font/merriweather_light"
+        android:scaleX="1.1"
+        android:scaleY="1.1"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/background_login"
+        app:layout_constraintTop_toBottomOf="@+id/background_password_confirm_register"
+        tools:ignore="RtlSymmetry,SpeakableTextPresentCheck" />
+
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:fontFamily="@font/merriweather_light"
+        android:hint="username"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B2000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background_username_register"
+        app:layout_constraintEnd_toEndOf="@+id/background_username_register"
+        app:layout_constraintStart_toStartOf="@+id/background_username_register"
+        app:layout_constraintTop_toTopOf="@+id/background_username_register"
+        tools:ignore="TouchTargetSizeCheck" />
+
+
+    <EditText
+        android:id="@+id/email_input"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:fontFamily="@font/merriweather_light"
+        android:hint="email"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#B2000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background_email_register"
+        app:layout_constraintEnd_toEndOf="@+id/background_email_register"
+        app:layout_constraintStart_toStartOf="@+id/background_email_register"
+        app:layout_constraintTop_toTopOf="@+id/background_email_register"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <EditText
+        android:id="@+id/password_input"
+        android:layout_width="210dp"
+
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:fontFamily="@font/merriweather_light"
+        android:hint="password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColorHint="#B2000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background_password_register"
+        app:layout_constraintEnd_toEndOf="@+id/background_password_register"
+        app:layout_constraintStart_toStartOf="@+id/background_password_register"
+        app:layout_constraintTop_toTopOf="@+id/background_password_register"
+        tools:ignore="TouchTargetSizeCheck,DuplicateSpeakableTextCheck" />
+
+    <EditText
+        android:id="@+id/password_conf_input"
+        android:layout_width="210dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:background="@null"
+        android:fontFamily="@font/merriweather_light"
+        android:hint="password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:textColorHint="#B2000000"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/background_password_confirm_register"
+        app:layout_constraintEnd_toEndOf="@+id/background_password_confirm_register"
+        app:layout_constraintStart_toStartOf="@+id/background_password_confirm_register"
+        app:layout_constraintTop_toTopOf="@+id/background_password_confirm_register"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <TextView
+        android:id="@+id/linkLoginPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="70dp"
+        android:text="click to login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button_login" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

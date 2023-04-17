@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "298218346906",
+    "project_id": "fittrack-f5409",
+    "storage_bucket": "fittrack-f5409.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298218346906:android:e393e5862e3e67c84bc223",
+        "android_client_info": {
+          "package_name": "com.example.FiTrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298218346906-lbf45u6uesefjjd481d1nqp1a1c0a8eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_I9w2M0e4vlgG6I194fFVK4i06zclTIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298218346906-lbf45u6uesefjjd481d1nqp1a1c0a8eq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298218346906:android:69a7ae6e1c2e07924bc223",
+        "android_client_info": {
+          "package_name": "com.example.fittrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298218346906-lbf45u6uesefjjd481d1nqp1a1c0a8eq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_I9w2M0e4vlgG6I194fFVK4i06zclTIs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298218346906-lbf45u6uesefjjd481d1nqp1a1c0a8eq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
