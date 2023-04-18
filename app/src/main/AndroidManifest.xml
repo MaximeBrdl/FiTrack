@@ -24,6 +24,12 @@
             android:name=".throwaway_page">
         </activity>
         <activity
+            android:name=".allMuscles">
+        </activity>
+        <activity
+            android:name=".allPrograms">
+        </activity>
+        <activity
             android:name=".home_page">
         </activity>
         <activity

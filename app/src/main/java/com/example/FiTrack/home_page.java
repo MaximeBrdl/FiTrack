@@ -12,7 +12,7 @@ public class home_page extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
 
-        ImageButton menu1 =findViewById(R.id.imageButton2);
+        ImageButton menu1 =findViewById(R.id.homeM);
         menu1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -20,7 +20,7 @@ public class home_page extends AppCompatActivity {
             }
         });
 
-        ImageButton menu2 =findViewById(R.id.imageButton7);
+        ImageButton menu2 =findViewById(R.id.searchM);
         menu2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -28,7 +28,7 @@ public class home_page extends AppCompatActivity {
             }
         });
 
-        ImageButton menu3 =findViewById(R.id.imageButton4);
+        ImageButton menu3 =findViewById(R.id.programM);
         menu3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -36,7 +36,7 @@ public class home_page extends AppCompatActivity {
             }
         });
 
-        ImageButton menu4 =findViewById(R.id.imageButton6);
+        ImageButton menu4 =findViewById(R.id.profileM);
         menu4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -116,19 +116,19 @@ public class home_page extends AppCompatActivity {
             }
         });
 
-        ImageButton see_all_programs =findViewById(R.id.imageButton13);
+        ImageButton see_all_programs =findViewById(R.id.imageButton14);
         see_all_programs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity( new Intent(home_page.this, program_page.class));
+                startActivity( new Intent(home_page.this, allPrograms.class));
             }
         });
 
-        ImageButton see_all_muscles =findViewById(R.id.imageButton13);
+        ImageButton see_all_muscles =findViewById(R.id.imageButton15);
         see_all_muscles.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity( new Intent(home_page.this, home_page.class));
+                startActivity( new Intent(home_page.this, allMuscles.class));
             }
         });
     }
