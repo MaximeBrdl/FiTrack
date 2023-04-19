@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
 public class allPrograms extends AppCompatActivity {
+
+    BottomSheetDialog sheetDialog;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.all_programs);
@@ -23,8 +27,12 @@ public class allPrograms extends AppCompatActivity {
         ImageButton allP1 = findViewById(R.id.allP1);
         allP1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(allPrograms.this, program_page.class));
+            public void onClick(View v) {
+                sheetDialog=new BottomSheetDialog(allPrograms.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
@@ -32,7 +40,11 @@ public class allPrograms extends AppCompatActivity {
         allP2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(allPrograms.this, program_page.class));
+                sheetDialog=new BottomSheetDialog(allPrograms.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
@@ -40,7 +52,11 @@ public class allPrograms extends AppCompatActivity {
         allP3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(allPrograms.this, program_page.class));
+                sheetDialog=new BottomSheetDialog(allPrograms.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
@@ -48,7 +64,11 @@ public class allPrograms extends AppCompatActivity {
         allP4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(allPrograms.this, program_page.class));
+                sheetDialog=new BottomSheetDialog(allPrograms.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 

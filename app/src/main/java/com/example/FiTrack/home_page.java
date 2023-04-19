@@ -7,7 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
+import com.google.android.material.bottomsheet.BottomSheetDialog;
+
 public class home_page extends AppCompatActivity {
+
+    BottomSheetDialog sheetDialog;
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.home_page);
@@ -45,34 +49,51 @@ public class home_page extends AppCompatActivity {
         });
 
         ImageButton program1 =findViewById(R.id.imageButton);
+
         program1.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity( new Intent(home_page.this, program_page.class));
+            public void onClick(View v) {
+                sheetDialog=new BottomSheetDialog(home_page.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
         ImageButton program2 =findViewById(R.id.imageButton3);
         program2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity( new Intent(home_page.this, program_page.class));
+            public void onClick(View v) {
+                sheetDialog=new BottomSheetDialog(home_page.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
         ImageButton program3 =findViewById(R.id.imageButton5);
         program3.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity( new Intent(home_page.this, program_page.class));
+            public void onClick(View v) {
+                sheetDialog=new BottomSheetDialog(home_page.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
         ImageButton program4 =findViewById(R.id.imageButton8);
         program4.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                startActivity( new Intent(home_page.this, program_page.class));
+            public void onClick(View v) {
+                sheetDialog=new BottomSheetDialog(home_page.this,R.style.AppBottomSheetDialogTheme) ;
+
+                sheetDialog.setContentView(R.layout.sheet_layout);
+
+                sheetDialog.show();
             }
         });
 
